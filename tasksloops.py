@@ -12,10 +12,13 @@ x=list(range(1,51))
 print(x)
 
 #Q2
+odd=[]
 x=range(1,51)
-for num in x:
-    if num%7==0 or num%5==0:
-        print(num)
+for i in x:
+    if i%7==0 or i%5==0:
+        odd.append(i)
+        
+print(odd)
 
 
 #Q3
@@ -40,9 +43,10 @@ odd_numbers=[]
 for x in num:
    if x%2!=0:
       odd_numbers.append(x)
+      count+=1
       if count==10:
         break
-print(count)
+print(odd_numbers)
 
     
 numbers=int(input("enter number: "))
